@@ -8,7 +8,7 @@ build_targets:
     container:
       image: yourbase/yb_ubuntu:18.04
     commands:
-      - mvn -P quality test package site
+      - mvn -X -e -P quality test package site
 ci:
   builds:
     - name: default
